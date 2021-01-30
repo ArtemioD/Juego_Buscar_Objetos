@@ -14,6 +14,11 @@ let posicion = map.getBoundingClientRect(); //linias 6 y 10 en mapa.js
 let cont = 19;
 buscar.src = imagenPrin[0][19];
 
+cambiador = (cont, a) => {
+    buscar.src = imagenPrin[0][cont];
+    return map.src = imagenPrin[a];
+}
+
 const mapa = new Mapa();
 
 mapa.getClick();
