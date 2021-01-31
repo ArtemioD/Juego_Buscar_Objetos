@@ -16,7 +16,7 @@ buscar.src = imagenPrin[0][19];
 
 cambiador = (cont) => {
     buscar.src = imagenPrin[0][cont];
-    return map.src = imagenPrin[cont + 1];
+    map.src = imagenPrin[cont + 1];
 }
 
 const mapa = new Mapa();
