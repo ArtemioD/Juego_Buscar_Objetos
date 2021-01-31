@@ -89,9 +89,8 @@ class Mapa {
                 cont--;
                 return cambiador(cont);
             } 
-            else if((456 <= x && x <= 480) && (163 <= y && y <= 189) && cont === 0) {
+            else if((456 <= x && x <= 480) && (163 <= y && y <= 189) && cont === 0) 
                 return map.src = imagenPrin[21];
-            } 
         });
         
     }

@@ -12,13 +12,12 @@ let buscar = document.getElementById("buscar");
 let posicion = map.getBoundingClientRect(); //linias 6 y 10 en mapa.js
 
 let cont = 19;
-buscar.src = imagenPrin[0][19];
+buscar.src = imagenPrin[0][cont];
 
-cambiador = (cont) => {
+const cambiador = (cont) => {
     buscar.src = imagenPrin[0][cont];
     map.src = imagenPrin[cont + 1];
 }
 
 const mapa = new Mapa();
-
 mapa.getClick();
