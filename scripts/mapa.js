@@ -89,8 +89,11 @@ class Mapa {
                 cont--;
                 return cambiador(cont);
             } 
-            else if((456 <= x && x <= 480) && (163 <= y && y <= 189) && cont === 0) 
-                return map.src = imagenPrin[21];
+            else if((456 <= x && x <= 480) && (163 <= y && y <= 189) && cont === 0) {
+                map.src = imagenPrin[21];
+                document.getElementById("text").innerHTML =  `<div align=center>¡¡Has logrado terminar el juego!! ¡¡Felicitaciones!!</div> `;
+            }
+                
         });
         
     }
